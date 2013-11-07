@@ -1,30 +1,21 @@
 set nocompatible
-filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+execute pathogen#infect()
+execute pathogen#helptags()
 
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'ervandew/supertab'
-Bundle 'tpope/vim-endwise'
-Bundle 'Raimondi/delimitMate'
-Bundle 'tpope/vim-surround'
-Bundle 'pangloss/vim-javascript'
-Bundle 'scrooloose/nerdtree'
-Bundle 'junegunn/seoul256.vim'
-Bundle 'bling/vim-airline'
-
-filetype plugin indent on
 syntax on
+filetype plugin indent on
 
 " Use system clipboard as default register
 set clipboard=unnamed
 
+" Colors
+set background=dark
+colorscheme Tomorrow-Night-Eighties
+
 " Backups
 set nobackup
 set nowritebackup
-colorscheme seoul256
 
 " UI
 set ruler
@@ -34,6 +25,7 @@ set splitbelow
 set splitright
 set cursorline
 set laststatus=2
+set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 
 " Encoding
 set encoding=utf-8
@@ -59,8 +51,9 @@ au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
 au BufWrite,BufRead,BufNewFile *.haml       set ft=haml
 au BufWrite,BufRead,BufNewFile *.irb        set ft=ruby
 au BufWrite,BufRead,BufNewFile *.json       set ft=javascript
+au BufWrite,BufRead,BufNewFile *.liquid     set ft=html
 au BufWrite,BufRead,BufNewFile *.markdown   set ft=markdown
-au BufWrite,BufRead,BufNewFile config.ru    set ft=ruby
+au BufWrite,BufRead,BufNewFile *.ru         set ft=ruby
 au BufWrite,BufRead,BufNewFile *.sass       set ft=sass
 au BufWrite,BufRead,BufNewFile *.scss       set ft=scss
 au BufWrite,BufRead,BufNewFile *.template   set ft=html
@@ -73,6 +66,9 @@ au BufWrite,BufRead,BufNewFile *.snippets   set ft=snippet
 au BufWrite,BufRead,BufNewFile *.thor       set ft=ruby
 au BufWrite,BufRead,BufNewFile *.watchr     set ft=ruby
 au BufWrite,BufRead,BufNewFile *.html       set ft=html
+au BufWrite,BufRead,BufNewFile *.as         set ft=actionscript
+au BufWrite,BufRead,BufNewFile *.c          set ft=c
+au BufWrite,BufRead,BufNewFile *.handlebars set ft=handlebars
 
 au FileType ruby         set ts=2 sw=2 sts=2 expandtab
 au FileType yaml         set ts=2 sw=2 sts=2 expandtab
@@ -80,15 +76,23 @@ au FileType rdoc         set ts=2 sw=2 sts=2 expandtab
 au FileType eruby        set ts=2 sw=2 sts=2 expandtab
 au FileType haml         set ts=2 sw=2 sts=2 expandtab
 au FileType html         set ts=2 sw=2 sts=2 expandtab
+au FileType php          set ts=2 sw=2 sts=2 expandtab
 au FileType sass         set ts=2 sw=2 sts=2 expandtab
+au FileType scss         set ts=2 sw=2 sts=2 expandtab
 au FileType html         set ts=2 sw=2 sts=2 expandtab
 au FileType css          set ts=2 sw=2 sts=2 expandtab
 au FileType markdown     set ts=2 sw=2 sts=2 expandtab
 au FileType vim          set ts=2 sw=2 sts=2 expandtab
 au FileType javascript   set ts=2 sw=2 sts=2 expandtab
+au FileType handlebars   set ts=2 sw=2 sts=2 expandtab
 au FileType text         set ts=2 sw=2 sts=2 expandtab
+au FileType snippet      set ts=8 sw=8 sts=8 noexpandtab
 au FileType coffee       set ts=2 sw=2 sts=2 expandtab
+au FileType cucumber     set ts=2 sw=2 sts=2 expandtab
 au FileType zsh          set ts=2 sw=2 sts=2 noexpandtab
+au FileType actionscript set ts=8 sw=8 sts=8 noexpandtab
+au FileType c            set ts=4 sw=4 sts=4 expandtab
+au FileType cpp          set ts=4 sw=4 sts=4 expandtab
 
 let mapleader = "\\"
 
@@ -126,5 +130,5 @@ vmap <C-Down> xp`[V`]
 " Toggle search highlighting
 nnoremap <leader>h :set hlsearch!<CR>
 
-" Enables powerline symbols to display correctly
-let g:airline_powerline_fonts = 1
+" Ragtag Settings
+let g:ragtag_global_maps = 1 " Enable global mappings
