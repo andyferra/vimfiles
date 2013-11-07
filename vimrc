@@ -6,17 +6,6 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-" Bundle 'kien/ctrlp.vim'
-" Bundle 'scrooloose/nerdcommenter'
-" Bundle 'ervandew/supertab'
-" Bundle 'tpope/vim-endwise'
-" Bundle 'Raimondi/delimitMate'
-" Bundle 'tpope/vim-surround'
-" Bundle 'pangloss/vim-javascript'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'junegunn/seoul256.vim'
-" Bundle 'bling/vim-airline'
-
 " Use system clipboard as default register
 set clipboard=unnamed
 
