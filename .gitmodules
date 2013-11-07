@@ -31,3 +31,9 @@
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/vim-tomorrow-theme"]
+	path = bundle/vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "bundle/vim-luna"]
+	path = bundle/vim-luna
+	url = https://github.com/Pychimp/vim-luna.git

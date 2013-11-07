@@ -12,7 +12,7 @@ set clipboard=unnamed
 " Backups
 set nobackup
 set nowritebackup
-colorscheme seoul256
+colorscheme Tomorrow-Night-Eighties
 
 " UI
 set ruler
