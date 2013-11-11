@@ -40,3 +40,6 @@
 [submodule "bundle/trailertrash"]
 	path = bundle/trailertrash
 	url = https://github.com/csexton/trailertrash.vim.git
+[submodule "bundle/vim-ragtag"]
+	path = bundle/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
