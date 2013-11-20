@@ -77,6 +77,7 @@ au FileType javascript   set ts=2 sw=2 sts=2 expandtab
 au FileType text         set ts=2 sw=2 sts=2 expandtab
 au FileType coffee       set ts=2 sw=2 sts=2 expandtab
 au FileType zsh          set ts=2 sw=2 sts=2 noexpandtab
+au FileType sh           set ts=2 sw=2 sts=2 noexpandtab
 
 let mapleader = "\\"
 
