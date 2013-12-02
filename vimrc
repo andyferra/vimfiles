@@ -7,7 +7,7 @@ syntax on
 filetype plugin indent on
 
 " Use system clipboard as default register
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Backups
 set nobackup
