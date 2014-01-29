@@ -52,6 +52,7 @@ au BufWrite,BufRead,BufNewFile config.ru    set ft=ruby
 au BufWrite,BufRead,BufNewFile *.sass       set ft=sass
 au BufWrite,BufRead,BufNewFile *.scss       set ft=scss
 au BufWrite,BufRead,BufNewFile *.template   set ft=html
+au BufWrite,BufRead,BufNewFile *.liquid     set ft=html
 au BufWrite,BufRead,BufNewFile *.text       set ft=textile
 au BufWrite,BufRead,BufNewFile Gemfile      set ft=ruby
 au BufWrite,BufRead,BufNewFile Capfile      set ft=ruby
@@ -103,6 +104,9 @@ nnoremap k gk
 
 " NERDCommenter Settings
 let NERDSpaceDelims = 1
+
+" NERDTree Settings
+let NERDTreeShowHidden = 1
 
 " Bubble single lines
 nmap <C-Up> ddkP
