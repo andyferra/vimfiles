@@ -107,6 +107,7 @@ let NERDSpaceDelims = 1
 
 " NERDTree Settings
 let NERDTreeShowHidden = 1
+let NERDTreeIgnore = ['\.swp$']
 
 " Bubble single lines
 nmap <C-Up> ddkP

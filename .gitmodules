@@ -22,9 +22,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/seoul256.vim"]
-	path = bundle/seoul256.vim
-	url = https://github.com/junegunn/seoul256.vim.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
@@ -52,3 +49,6 @@
 [submodule "bundle/base16-vim"]
 	path = bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
