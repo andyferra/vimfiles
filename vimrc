@@ -1,4 +1,5 @@
 set nocompatible
+set shell=/bin/sh
 
 execute pathogen#infect()
 execute pathogen#helptags()
@@ -7,7 +8,7 @@ syntax on
 filetype plugin indent on
 
 " Use system clipboard as default register
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Backups
 set nobackup
