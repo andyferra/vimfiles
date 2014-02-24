@@ -43,6 +43,10 @@ set nofoldenable
 " Spelling
 set spelllang=en_us
 
+" Searching
+set incsearch
+set hlsearch
+
 " Filetypes
 au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
 au BufWrite,BufRead,BufNewFile *.haml       set ft=haml
@@ -117,9 +121,6 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
-
-" Toggle search highlighting
-nnoremap <leader>h :set hlsearch!<CR>
 
 " Enables powerline symbols to display correctly
 let g:airline_powerline_fonts = 1
