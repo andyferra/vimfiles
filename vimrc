@@ -71,6 +71,8 @@ au BufWrite,BufRead,BufNewFile *.thor       set ft=ruby
 au BufWrite,BufRead,BufNewFile *.watchr     set ft=ruby
 au BufWrite,BufRead,BufNewFile *.html       set ft=html
 
+au FileType go au BufWritePre <buffer> Fmt
+
 au FileType ruby         set ts=2 sw=2 sts=2 expandtab
 au FileType yaml         set ts=2 sw=2 sts=2 expandtab
 au FileType rdoc         set ts=2 sw=2 sts=2 expandtab
@@ -87,6 +89,7 @@ au FileType text         set ts=2 sw=2 sts=2 expandtab
 au FileType coffee       set ts=2 sw=2 sts=2 expandtab
 au FileType zsh          set ts=2 sw=2 sts=2 noexpandtab
 au filetype sh           set ts=2 sw=2 sts=2 noexpandtab
+au filetype go           set ts=4 sw=4 sts=4 noexpandtab
 
 let mapleader = "\\"
 
