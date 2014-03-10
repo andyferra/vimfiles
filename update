@@ -3,3 +3,5 @@
 git pull origin master
 git submodule init
 git submodule update --init --recursive
+
+go get -u github.com/nsf/gocode
