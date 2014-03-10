@@ -34,12 +34,6 @@
 [submodule "bundle/trailertrash"]
 	path = bundle/trailertrash
 	url = https://github.com/csexton/trailertrash.vim.git
-[submodule "bundle/vim-ragtag"]
-	path = bundle/vim-ragtag
-	url = https://github.com/tpope/vim-ragtag.git
-[submodule "bundle/emmet-vim"]
-	path = bundle/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
@@ -49,3 +43,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/vim-golang"]
+	path = bundle/vim-golang
+	url = https://github.com/jnwhiteh/vim-golang.git
