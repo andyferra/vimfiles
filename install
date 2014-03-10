@@ -6,3 +6,5 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 git submodule init
 git submodule update --init --recursive
+
+go get -u github.com/nsf/gocode

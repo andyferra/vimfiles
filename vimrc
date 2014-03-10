@@ -47,6 +47,9 @@ set spelllang=en_us
 set incsearch
 set hlsearch
 
+" Completion
+set completeopt-=preview
+
 " Filetypes
 au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
 au BufWrite,BufRead,BufNewFile *.haml       set ft=haml
