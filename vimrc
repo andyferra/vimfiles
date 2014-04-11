@@ -128,5 +128,6 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
-" Enables powerline symbols to display correctly
+" Airline Config
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
