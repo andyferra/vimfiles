@@ -4,19 +4,19 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'kien/ctrlp.vim.git'
-Plugin 'scrooloose/nerdcommenter.git'
-Plugin 'tpope/vim-endwise.git'
-Plugin 'Raimondi/delimitMate.git'
-Plugin 'tpope/vim-surround.git'
-Plugin 'pangloss/vim-javascript.git'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'bling/vim-airline.git'
-Plugin 'chriskempson/vim-tomorrow-theme.git'
-Plugin 'dag/vim-fish.git'
-Plugin 'Valloric/YouCompleteMe.git'
-Plugin 'vim-scripts/HTML-AutoCloseTag.git'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-endwise'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/nerdtree'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'dag/vim-fish'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'fatih/vim-go'
+Plugin 'bling/vim-airline'
 call vundle#end()
 
 syntax on
@@ -28,7 +28,8 @@ set clipboard=unnamed
 " Backups
 set nobackup
 set nowritebackup
-colorscheme Tomorrow-Night-Eighties
+let g:hybrid_use_iTerm_colors = 1
+colorscheme hybrid
 
 " UI
 set ruler
