@@ -11,12 +11,12 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
-Plugin 'w0ng/vim-hybrid'
 Plugin 'dag/vim-fish'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
+Plugin 'chriskempson/vim-tomorrow-theme'
 call vundle#end()
 
 syntax on
@@ -28,8 +28,7 @@ set clipboard=unnamed
 " Backups
 set nobackup
 set nowritebackup
-let g:hybrid_use_iTerm_colors = 1
-colorscheme hybrid
+colorscheme Tomorrow-Night-Eighties
 
 " UI
 set ruler
@@ -145,3 +144,6 @@ vmap <C-Down> xp`[V`]
 " Airline Config
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
+
+" Vim-Go Config
+let g:go_fmt_command = "gofmt"
