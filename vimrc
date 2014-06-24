@@ -16,7 +16,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
-Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'JuliaLang/julia-vim'
+Plugin 'w0ng/vim-hybrid'
 call vundle#end()
 
 syntax on
@@ -28,7 +29,8 @@ set clipboard=unnamed
 " Backups
 set nobackup
 set nowritebackup
-colorscheme Tomorrow-Night-Eighties
+let g:hybrid_use_iTerm_colors = 1
+colorscheme hybrid
 
 " UI
 set ruler
