@@ -2,6 +2,7 @@ set nocompatible
 set shell=/bin/sh
 filetype off
 
+" vundle start
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'kien/ctrlp.vim'
@@ -19,6 +20,7 @@ Plugin 'bling/vim-airline'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'w0ng/vim-hybrid'
 call vundle#end()
+" vundle end
 
 syntax on
 filetype plugin indent on
