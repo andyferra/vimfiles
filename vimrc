@@ -19,6 +19,7 @@ Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'w0ng/vim-hybrid'
+Plugin 'SirVer/ultisnips'
 call vundle#end()
 " vundle end
 
@@ -151,3 +152,8 @@ let g:airline#extensions#whitespace#enabled = 0
 
 " Vim-Go Config
 let g:go_fmt_command = "gofmt"
+
+" Configure UltiSnips
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<s-c-k>"
