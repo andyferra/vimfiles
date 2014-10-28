@@ -13,13 +13,13 @@ Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'dag/vim-fish'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
 Plugin 'JuliaLang/julia-vim'
-Plugin 'w0ng/vim-hybrid'
 Plugin 'SirVer/ultisnips'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'ervandew/supertab'
 call vundle#end()
 " vundle end
 
@@ -33,7 +33,7 @@ set clipboard=unnamed
 set nobackup
 set nowritebackup
 let g:hybrid_use_iTerm_colors = 1
-colorscheme hybrid
+colorscheme Tomorrow-Night-Eighties
 
 " UI
 set ruler
@@ -154,6 +154,4 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:go_fmt_command = "gofmt"
 
 " Configure UltiSnips
-let g:UltiSnipsExpandTrigger="<c-k>"
-let g:UltiSnipsJumpForwardTrigger="<c-k>"
-let g:UltiSnipsJumpBackwardTrigger="<s-c-k>"
+let g:UltiSnipsEditSplit="vertical"
