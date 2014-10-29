@@ -20,6 +20,7 @@ Plugin 'JuliaLang/julia-vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ervandew/supertab'
+Plugin 'csexton/trailertrash.vim'
 call vundle#end()
 " vundle end
 
@@ -51,6 +52,7 @@ set encoding=utf-8
 set nowrap
 set textwidth=0
 set nospell
+set colorcolumn=80
 
 " Invisible Characters
 set nolist
