@@ -72,6 +72,9 @@ set hlsearch
 " Completion
 set completeopt-=preview
 
+" Search for selected text
+vnoremap // y/<c-r>"<cr>"
+
 " Filetypes
 au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
 au BufWrite,BufRead,BufNewFile *.haml       set ft=haml
@@ -133,6 +136,12 @@ vnoremap / /\v
 nnoremap j gj
 nnoremap k gk
 
+" Strip Trailing Whitespace
+nnoremap <leader>t :TrailerTrim<CR>
+
+" Hide Search Highlighting
+nnoremap <leader>h :noh<CR>
+
 " NERDCommenter Settings
 let NERDSpaceDelims = 1
 
@@ -147,6 +156,9 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
+
+" Seach for selected text
+vnoremap // y/<c-r>"<cr>
 
 " Airline Config
 let g:airline_powerline_fonts = 1
