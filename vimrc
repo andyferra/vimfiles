@@ -72,9 +72,6 @@ set hlsearch
 " Completion
 set completeopt-=preview
 
-" Search for selected text
-vnoremap // y/<c-r>"<cr>"
-
 " Filetypes
 au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
 au BufWrite,BufRead,BufNewFile *.haml       set ft=haml
@@ -157,8 +154,11 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
-" Seach for selected text
-vnoremap // y/<c-r>"<cr>
+" Search for the current selection
+vnoremap // y/<c-r>"<cr>N"
+
+" Select the current word and search for it
+nnoremap <leader>d viwy/<c-r>"<cr>N"
 
 " Airline Config
 let g:airline_powerline_fonts = 1
