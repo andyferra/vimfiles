@@ -21,6 +21,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ervandew/supertab'
 Plugin 'csexton/trailertrash.vim'
+Plugin 'nelstrom/vim-visual-star-search'
 call vundle#end()
 " vundle end
 
@@ -153,12 +154,6 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
-
-" Search for the current selection
-vnoremap // y/<c-r>"<cr>N"
-
-" Select the current word and search for it
-nnoremap <leader>d viwy/<c-r>"<cr>N"
 
 " Airline Config
 let g:airline_powerline_fonts = 1
