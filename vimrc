@@ -76,6 +76,7 @@ set hlsearch
 " Completion
 set completeopt-=preview
 
+
 " Filetypes
 au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
 au BufWrite,BufRead,BufNewFile *.haml       set ft=haml
@@ -115,6 +116,30 @@ au FileType zsh          set ts=2 sw=2 sts=2 noexpandtab
 au filetype sh           set ts=2 sw=2 sts=2 noexpandtab
 au filetype go           set ts=4 sw=4 sts=4 noexpandtab
 
+
+" NERDCommenter Settings
+let NERDSpaceDelims = 1
+
+" NERDTree Settings
+let NERDTreeShowHidden = 1
+let NERDTreeIgnore = ['\.swp$']
+
+" Airline Config
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
+
+" Vim-Go Config
+let g:go_fmt_command = "gofmt"
+
+" Configure UltiSnips
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
+
+
+" Mappings
 let mapleader = "\\"
 
 " Toggle Invisibles
@@ -143,13 +168,6 @@ nnoremap <leader>t :TrailerTrim<CR>
 " Hide Search Highlighting
 nnoremap <leader>h :noh<CR>
 
-" NERDCommenter Settings
-let NERDSpaceDelims = 1
-
-" NERDTree Settings
-let NERDTreeShowHidden = 1
-let NERDTreeIgnore = ['\.swp$']
-
 " Bubble single lines
 nmap <C-Up> ddkP
 nmap <C-Down> ddp
@@ -157,17 +175,3 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
-
-" Airline Config
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#whitespace#enabled = 0
-
-" Vim-Go Config
-let g:go_fmt_command = "gofmt"
-
-" Configure UltiSnips
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsListSnippets="<c-tab>"
