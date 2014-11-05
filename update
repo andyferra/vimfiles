@@ -1,7 +1,4 @@
 #!/bin/bash
 
-cd ~/.vim/bundle/Vundle.vim
 git pull origin master
-cd ~
-
 vim +PluginUpdate +qall
