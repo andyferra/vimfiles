@@ -128,9 +128,6 @@ let NERDTreeIgnore = ['\.swp$']
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 
-" Vim-Go Config
-let g:go_fmt_command = "gofmt"
-
 " Configure UltiSnips
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger="<tab>"
