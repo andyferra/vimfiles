@@ -10,7 +10,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-endwise'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
-Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'dag/vim-fish'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
@@ -22,6 +21,9 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ervandew/supertab'
 Plugin 'csexton/trailertrash.vim'
 Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'mileszs/ack.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'vim-scripts/JavaScript-Indent'
 call vundle#end()
 " vundle end
 
