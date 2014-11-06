@@ -56,7 +56,7 @@ set encoding=utf-8
 set nowrap
 set textwidth=0
 set nospell
-set colorcolumn=80
+match ErrorMsg '\%>80v.\+'
 
 " Invisible Characters
 set nolist
