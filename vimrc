@@ -76,6 +76,9 @@ set hlsearch
 " Completion
 set completeopt-=preview
 
+" Filesystem
+set wildignore+=*/node_modules/**/*
+
 
 " Filetypes
 au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
