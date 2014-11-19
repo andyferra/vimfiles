@@ -23,7 +23,6 @@ Plugin 'csexton/trailertrash.vim'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'mileszs/ack.vim'
 Plugin 'jelera/vim-javascript-syntax'
-Plugin 'vim-scripts/JavaScript-Indent'
 Plugin 'tpope/vim-abolish'
 call vundle#end()
 " vundle end
