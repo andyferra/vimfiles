@@ -55,7 +55,6 @@ set encoding=utf-8
 set nowrap
 set textwidth=0
 set nospell
-match ErrorMsg '\%>80v.\+'
 
 " Invisible Characters
 set nolist
@@ -174,3 +173,9 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
+
+
+" Load local config if it exists
+if filereadable(expand('~/.vimrc_local'))
+  source ~/.vimrc_local
+endif
