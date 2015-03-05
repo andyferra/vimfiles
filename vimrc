@@ -152,9 +152,9 @@ nmap <silent> <leader>w :set wrap! linebreak! nolist<CR>
 " Toggle Spell-Checking
 nmap <silent> <leader>s :set spell!<CR>
 
-" Use very-magic Regex
-nnoremap / /\v
-vnoremap / /\v
+" Use very-magic case-insensitive Regex
+nnoremap / /\v\c
+vnoremap / /\v\c
 
 " Soft-wrapped-friendly movement
 nnoremap j gj
