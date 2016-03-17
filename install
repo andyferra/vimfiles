@@ -4,3 +4,6 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+# Use the following when building YCM
+# ./install.py --gocode-completer --tern-completer

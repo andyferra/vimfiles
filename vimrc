@@ -3,40 +3,49 @@ set shell=/bin/sh
 filetype off
 
 " TOOD
-" - setup youcompleteme with go, python, and javascript
-" - remove supertab
-" - setup emmet-vim
-" - remove HTML-AutoCloseTag
-" - setup vim ragtag for html
-" - see if anything else is needed for writing HTML
-" - dial in JS workflow
-" - dial in python workflow
-" - dial in go workflow
+" - dial in delimitmate for real
+"   it has a lot of stuff for opening a new line with returns and spaces and
+"   stuff
+"   https://github.com/Raimondi/delimitMate/blob/master/doc/delimitMate.txt
 
-" vundle start
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+" Navigation / Vim UI
 Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'bling/vim-airline'
+
+" Themes
+Plugin 'mhumeSF/one-dark.vim'
+
+" General Editing
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-endwise'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdtree'
-Plugin 'dag/vim-fish'
-Plugin 'vim-scripts/HTML-AutoCloseTag'
-Plugin 'fatih/vim-go'
-Plugin 'bling/vim-airline'
-Plugin 'JuliaLang/julia-vim'
-Plugin 'mhumeSF/one-dark.vim'
-Plugin 'ervandew/supertab'
 Plugin 'csexton/trailertrash.vim'
-Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'mileszs/ack.vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'tpope/vim-abolish'
+Plugin 'Valloric/YouCompleteMe'
+
+" Javascript
 Plugin 'mxw/vim-jsx'
+Plugin 'jelera/vim-javascript-syntax'
+
+" Python
+Plugin 'hdima/python-syntax'
+
+" Go
+Plugin 'fatih/vim-go'
+
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
+
+" HTML
+Plugin 'tpope/vim-ragtag'
+Plugin 'mattn/emmet-vim'
+
 call vundle#end()
-" vundle end
 
 syntax on
 filetype plugin indent on
@@ -68,7 +77,7 @@ set textwidth=0
 set nospell
 
 " Invisible Characters
-set nolist
+set list
 set backspace=indent,eol,start
 set listchars=tab:▸\ ,eol:¬
 
@@ -92,42 +101,42 @@ set wildignore+=*/node_modules/**/*
 " Filetypes
 au BufWrite,BufRead,BufNewFile *.feature    set ft=cucumber
 au BufWrite,BufRead,BufNewFile *.haml       set ft=haml
+au BufWrite,BufRead,BufNewFile *.html       set ft=html
 au BufWrite,BufRead,BufNewFile *.irb        set ft=ruby
 au BufWrite,BufRead,BufNewFile *.json       set ft=javascript
+au BufWrite,BufRead,BufNewFile *.liquid     set ft=html
 au BufWrite,BufRead,BufNewFile *.markdown   set ft=markdown
-au BufWrite,BufRead,BufNewFile config.ru    set ft=ruby
 au BufWrite,BufRead,BufNewFile *.sass       set ft=sass
 au BufWrite,BufRead,BufNewFile *.scss       set ft=scss
-au BufWrite,BufRead,BufNewFile *.template   set ft=html
-au BufWrite,BufRead,BufNewFile *.liquid     set ft=html
-au BufWrite,BufRead,BufNewFile *.text       set ft=textile
-au BufWrite,BufRead,BufNewFile Gemfile      set ft=ruby
-au BufWrite,BufRead,BufNewFile Capfile      set ft=ruby
-au BufWrite,BufRead,BufNewFile /etc/nginx/* set ft=nginx
-au BufWrite,BufRead,BufNewFile *.txt        set ft=text
 au BufWrite,BufRead,BufNewFile *.snippets   set ft=snippet
+au BufWrite,BufRead,BufNewFile *.template   set ft=html
+au BufWrite,BufRead,BufNewFile *.text       set ft=textile
 au BufWrite,BufRead,BufNewFile *.thor       set ft=ruby
+au BufWrite,BufRead,BufNewFile *.txt        set ft=text
 au BufWrite,BufRead,BufNewFile *.watchr     set ft=ruby
-au BufWrite,BufRead,BufNewFile *.html       set ft=html
+au BufWrite,BufRead,BufNewFile /etc/nginx/* set ft=nginx
+au BufWrite,BufRead,BufNewFile Capfile      set ft=ruby
+au BufWrite,BufRead,BufNewFile Gemfile      set ft=ruby
+au BufWrite,BufRead,BufNewFile config.ru    set ft=ruby
 
-au FileType ruby         set ts=2 sw=2 sts=2 expandtab
-au FileType python       set ts=2 sw=2 sts=2 expandtab
-au FileType yaml         set ts=2 sw=2 sts=2 expandtab
-au FileType rdoc         set ts=2 sw=2 sts=2 expandtab
+au FileType coffee       set ts=2 sw=2 sts=2 expandtab
+au FileType css          set ts=2 sw=2 sts=2 expandtab
 au FileType eruby        set ts=2 sw=2 sts=2 expandtab
 au FileType haml         set ts=2 sw=2 sts=2 expandtab
 au FileType html         set ts=2 sw=2 sts=2 expandtab
-au FileType sass         set ts=2 sw=2 sts=2 expandtab
 au FileType html         set ts=2 sw=2 sts=2 expandtab
-au FileType css          set ts=2 sw=2 sts=2 expandtab
-au FileType markdown     set ts=2 sw=2 sts=2 expandtab
-au FileType vim          set ts=2 sw=2 sts=2 expandtab
 au FileType javascript   set ts=2 sw=2 sts=2 expandtab
+au FileType markdown     set ts=2 sw=2 sts=2 expandtab
+au FileType python       set ts=2 sw=2 sts=2 expandtab
+au FileType rdoc         set ts=2 sw=2 sts=2 expandtab
+au FileType ruby         set ts=2 sw=2 sts=2 expandtab
+au FileType sass         set ts=2 sw=2 sts=2 expandtab
 au FileType text         set ts=2 sw=2 sts=2 expandtab
-au FileType coffee       set ts=2 sw=2 sts=2 expandtab
+au FileType vim          set ts=2 sw=2 sts=2 expandtab
+au FileType yaml         set ts=2 sw=2 sts=2 expandtab
 au FileType zsh          set ts=2 sw=2 sts=2 noexpandtab
-au filetype sh           set ts=2 sw=2 sts=2 noexpandtab
 au filetype go           set ts=4 sw=4 sts=4 noexpandtab
+au filetype sh           set ts=2 sw=2 sts=2 noexpandtab
 
 
 " NERDCommenter Settings
@@ -185,6 +194,10 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
+
+" DelimitMate
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
 
 
 " Load local config if it exists
