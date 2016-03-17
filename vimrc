@@ -2,6 +2,17 @@ set nocompatible
 set shell=/bin/sh
 filetype off
 
+" TOOD
+" - setup youcompleteme with go, python, and javascript
+" - remove supertab
+" - setup emmet-vim
+" - remove HTML-AutoCloseTag
+" - setup vim ragtag for html
+" - see if anything else is needed for writing HTML
+" - dial in JS workflow
+" - dial in python workflow
+" - dial in go workflow
+
 " vundle start
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -16,14 +27,14 @@ Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
 Plugin 'JuliaLang/julia-vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'mhumeSF/one-dark.vim'
 Plugin 'ervandew/supertab'
 Plugin 'csexton/trailertrash.vim'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'mileszs/ack.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'tpope/vim-abolish'
+Plugin 'mxw/vim-jsx'
 call vundle#end()
 " vundle end
 
@@ -37,7 +48,7 @@ set clipboard=unnamed
 set nobackup
 set nowritebackup
 let g:hybrid_use_iTerm_colors = 1
-colorscheme Tomorrow-Night-Eighties
+colorscheme onedark
 
 " UI
 set ruler
@@ -100,6 +111,7 @@ au BufWrite,BufRead,BufNewFile *.watchr     set ft=ruby
 au BufWrite,BufRead,BufNewFile *.html       set ft=html
 
 au FileType ruby         set ts=2 sw=2 sts=2 expandtab
+au FileType python       set ts=2 sw=2 sts=2 expandtab
 au FileType yaml         set ts=2 sw=2 sts=2 expandtab
 au FileType rdoc         set ts=2 sw=2 sts=2 expandtab
 au FileType eruby        set ts=2 sw=2 sts=2 expandtab
