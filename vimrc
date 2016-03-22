@@ -3,10 +3,9 @@ set shell=/bin/sh
 filetype off
 
 " TOOD
-" - dial in delimitmate for real
-"   it has a lot of stuff for opening a new line with returns and spaces and
-"   stuff
-"   https://github.com/Raimondi/delimitMate/blob/master/doc/delimitMate.txt
+" Setup editor config?
+" https://github.com/editorconfig/editorconfig-vim
+" Move all dotfiles into a repo
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -20,6 +19,7 @@ Plugin 'bling/vim-airline'
 
 " Themes
 Plugin 'mhumeSF/one-dark.vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 " General Editing
 Plugin 'scrooloose/nerdcommenter'
