@@ -57,7 +57,7 @@ set clipboard=unnamed
 set nobackup
 set nowritebackup
 let g:hybrid_use_iTerm_colors = 1
-colorscheme onedark
+colorscheme Tomorrow-Night-Eighties
 
 " UI
 set ruler
