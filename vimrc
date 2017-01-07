@@ -15,10 +15,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 
 " Themes
-Plugin 'mhumeSF/one-dark.vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 
 " General Editing
@@ -29,17 +28,11 @@ Plugin 'csexton/trailertrash.vim'
 Plugin 'Valloric/YouCompleteMe'
 
 " Javascript
-Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 
 " Python
 Plugin 'hdima/python-syntax'
-
-" Go
-Plugin 'fatih/vim-go'
-
-" Ruby
-Plugin 'vim-ruby/vim-ruby'
 
 " HTML
 Plugin 'tpope/vim-ragtag'
